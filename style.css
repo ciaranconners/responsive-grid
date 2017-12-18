@@ -1,32 +1,11 @@
-body {
-  font-family: monospace;
-}
 .container {
     display: grid;
     margin: 20% 10% 10% 10%;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, .5fr);
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 }
-.grid-item {
-  color: white;
-  text-align: center;
-  font-size: 240%;
-}
-.green {
-  background-color: rgb(204, 255, 204);
-}
-.yellow {
-  background-color: rgb(230, 230, 0);
-}
-.blue {
-  background-color: rgb(51, 153, 255);
-}
-.red {
-  background-color: rgb(255, 51, 0);
-}
-.purple {
-  background-color: rgb(153, 51, 153);
-}
-.orange {
-  background-color: rgb(255, 153, 0);
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
